@@ -1,1 +1,17 @@
-file:///C:/Users/agust/PycharmProjects/Curso_Programacion1/Ejercicio_Calcular_%C3%81rea.py 
+# Mensajes explicativo
+mensaje_inicio = "Este programa calcula el área de un rectángulo utilizando valores predefinidos."
+mensaje_resultado = "El área se calcula multiplicand el ancho por el largo."
+
+#Definir variables numerical (valores predefinidos)
+ancho = 8
+largo = 12
+
+#Cálculo del área
+area = ancho * largo
+
+#Mostrar resultant de forma amigable
+print(mensaje_inicio)
+print(f"Ancho del rectángulo: {ancho} unidades.")
+print(f"Largo del rectángulo: {largo} unidades.")
+print(mensaje_resultado)
+print(f"Área calculada: {area} unidades cuadradas.")
