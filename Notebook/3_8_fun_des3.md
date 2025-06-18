@@ -1,0 +1,6 @@
+### Desafío 3
+Construye una función que tome dos listas y devuelva `True` si tienen al menos un elemento en común, de lo contrario, que devuelva `False`.
+
+Explicación del ejercicio:
+
+El primer paso es definir la función: tienen_el_elemento_en_comun que recibe dos listas como parametros: (lista1, lista2). Luego como segundo paso utilizamos un bucle: for elemento in lista1 y luego en cada vuelta, usamos: if elemento in lista2, para ver si ese elemento también está en la segunda lista, dónde si encuentra un elemento en común devolvera true: return True, luego en el siguiente paso si termina de recorrer sin encontrar un elemento en común dentro de la otra lista vaa devolver false: return False. Luego le definimos las listas que va a utilizar, en este caso: lista_1 = [1, 2, 3, 4] y la lista 2, lista_2 = [5, 6, 3], y finalmente utilizamos los print para que nos muestre el resultado en pantalla: print(tienen_elemento_en_comun(lista_1, lista_2)). En este caso debería devolver True porque si hay un  elemento en común que es el 3.
