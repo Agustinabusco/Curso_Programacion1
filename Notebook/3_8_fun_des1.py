@@ -12,4 +12,4 @@ suma, promedio = suma_y_promedio(numeros)
 
 print("La suma es:", suma)
 print("El promedio es:", promedio)
-
+print("\n")
