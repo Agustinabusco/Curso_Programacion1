@@ -1,0 +1,8 @@
+### Desafío 4
+
+El Máximo Común Divisor (MCD) es un concepto matemático que ha sido estudiado desde tiempos antiguos. Atribuido a Euclides, el algoritmo para determinarlo es elegante y eficiente. Tu tarea es implementar una función que calcule el MCD de dos números utilizando el algoritmo de Euclides.
+
+Explicación del ejercicio:
+
+Primero que nada tenemos que tener claro que el MCD ( Máximo Común Divisor) de dos números es el número más grande que puede dividir a ambos sin dejar resto. Entonces,, por ejemplo, en nuestro código vamos a utilizar el MCD de 48 y 18 que es 6, porque 48 dividido 6 da 8 y 18 dividido 6 da 3, y no hay ningún número más grande que divida a ambos sin resto. Entonces a continuación si vamos con el paso a paso del código. El paso uno es definir la función: mcd(a, b) que toma dos números como entrada, el paso dos utulizamos un bucle: while, que se repite mientras b no sea 0 (!). Luego, como tercer paso, en cada vuelta del bucle el nuevo:a pasa a ser: b y el nuevo: b es el resto de dividir: a entre: b (esto lo hacemos con a/b), Luego como cuarto paso cuando: b llega a cero, el valor de: a es el MCD, y lo devolvemos con return. Luego para probar la función colocamos los números así: numero1 = 48 y abajo numero2 = 18
+abajo, continuando con el código escribimos resultado = mcd(numero1, numero2) y finalmente el print para ver el resultado en pantalla, en este caso: print("El MCD de", numero1, "y", numero2, "es:", resultado) Lo que si el código está bien, debería devolvernos como resultado que el MCD de 48 y 18 es 6.
