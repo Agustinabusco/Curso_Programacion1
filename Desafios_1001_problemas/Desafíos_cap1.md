@@ -245,3 +245,103 @@ Problema 21
 
 Pregunta: «Mi primo me dijo que Python, al ser de alto nivel, es lento y poco eficiente. ¿Esto es cierto o depende de cómo se use?» – Pregunta de Ana, que está comenzando a programar.
 Respuesta: Es cierto que Python es más lento que otros lenguajes como C o C++, porque es un lenguaje interpretado de alto nivel: eso significa que prioriza la facilidad de uso y legibilidad sobre la velocidad pura. Sin embargo, eso no significa que sea inútil ni ineficiente, sin embargo, en la mayoría de los proyectos (web, automatización, ciencia de datos, aprendizaje automático, scripts, educación...), la velocidad de desarrollo y la facilidad de uso son más importantes que la velocidad de ejecución.
+
+### Capítulo 2
+
+SEMANA DEL 1 AL 3 DE JULIO
+
+Capítulo 2
+Problema 70
+
+Pregunta: Martín está practicando algoritmos en Python y quiere mejorar. ¿Cómo podrías enseñarle a identificar errores comunes como bucles infinitos o condiciones mal formuladas?
+Respuesta: Para ayudar a Martín a identificar errores comunes en Python como los bucles infinitos o condiciones mal formuladas, lo mejor es enseñarle a revisar paso a paso su código y probar con ejemplos simples. Un bucle infinito ocurre cuando la condición nunca se vuelve falsa, como en un while True, y puede evitarse usando contadores o asegurándose de que la condición cambie dentro del bucle. Las condiciones mal formuladas, como if edad > 30 and edad < 18, nunca serán verdaderas, por eso es importante que lea en voz alta lo que está preguntando el código y que pruebe con diferentes valores. También es muy útil usar print() para mostrar qué está pasando en cada paso y así entender si el programa se comporta como espera. Con estos consejos, y practicando con pequeños ejercicios, va a poder detectar errores más fácilmente y mejorar su lógica.
+
+Problema 76
+
+Pregunta:Escribir un programa en Python que permita calcular la media aritmética de una lista de números ingresados por el usuario.
+Respuesta:
+def calcular_media(lista):
+    if len(lista) == 0:
+        return 0
+    suma = sum(lista)
+    media = suma / len(lista)
+    return media
+
+def main():
+    entrada = input("Ingresá números separados por comas: ")
+    numeros = [float(n) for n in entrada.split(",")]
+    resultado = calcular_media(numeros)
+    print("La media aritmética es:", resultado)
+
+main()
+
+Problema 102
+
+Pregunta: Escribir un programa en Python que calcule la suma total de los valores de un arreglo.
+Respuesta: 
+def calcular_suma(lista):
+    suma = sum(lista)
+    return suma
+
+def main():
+    entrada = input("Ingresá los números separados por comas: ")
+    numeros = [float(n) for n in entrada.split(",")]
+    resultado = calcular_suma(numeros)
+    print("La suma total es:", resultado)
+
+main()
+
+
+SEMANA DEL 8 AL 10 DE JULIO
+
+Problema
+
+Pregunta: Ana quiere aprender Python pero teme no saber matemáticas avanzadas. ¿Cómo podrías explicarle que puede comenzar igual y aprender lógica paso a paso? ¿Estás de acuerdo con esa idea?
+Respuesta: Sí, estoy totalmente de acuerdo con que Ana puede empezar a aprender Python sin saber matemáticas avanzadas. Le podés explicar que para comenzar no necesita fórmulas complicadas ni conocimientos difíciles, sino ganas de aprender y practicar. Python es un lenguaje muy claro y sencillo, ideal para principiantes, y muchas veces se empieza con ideas básicas como sumar números, usar condiciones como "si pasa esto, hacé aquello", o repetir cosas con bucles.
+
+Problema 66
+
+Pregunta: Ana está comenzando a programar y quiere saber si Python es un buen lenguaje para principiantes. ¿Qué argumentos le darías a favor o en contra?
+Respuesta: Python es uno de los mejores lenguajes para empezar a programar, y hay muchas razones a favor. En primer lugar, su sintaxis es clara y parecida al lenguaje humano, por lo que no necesita memorizar cosas complicadas desde el principio. Además, no hace falta declarar el tipo de datos como en otros lenguajes (por ejemplo, no hay que decir si una variable es un número o texto), lo que hace que escribir código sea más sencillo. Tiene una gran comunidad y muchos recursos gratuitos (videos, cursos, ejercicios), lo que facilita el aprendizaje. También es muy usado en áreas actuales como inteligencia artificial, desarrollo web y automatización, por lo que lo que aprenda ahora puede servirle más adelante. Como punto en contra, se podría decir que no es el lenguaje más rápido en ejecución ni el más usado en programación de sistemas, pero eso no afecta para nada a alguien que está empezando.
+
+Problema 39
+
+Pregunta: ¿Cómo se declaran y usan constantes en Python, y cuál es su propósito dentro de un algoritmo?
+Respuesta: En Python, las constantes se declaran igual que las variables, pero por convención se escriben con letras mayúsculas para indicar que no deberían cambiar su valor a lo largo del programa, aunque Python no impide modificar una constante (porque no tiene constantes "reales" como otros lenguajes), escribirlas en mayúsculas ayuda a que los demás entiendan que ese valor es fijo y no debe ser modificado. 
+
+
+SEMANA DEL 15 AL 17 DE JULIO
+
+
+Problema 77
+
+Pregunta: Escribir un programa en Python que lea un número entero y determine si es positivo, negativo o cero utilizando condicionales.
+Respuesta: 
+def main():
+    numero = int(input("Ingresá un número entero: "))
+
+    if numero > 0:
+        print("El número es positivo.")
+    elif numero < 0:
+        print("El número es negativo.")
+    else:
+        print("El número es cero.")
+
+main()
+
+Problema 43
+
+Pregunta: ¿Qué técnicas se pueden usar en Python para optimizar el uso de listas y variables en un algoritmo y hacerlo más claro?
+Respuesta: Para optimizar el uso de listas y variables en Python y que un algoritmo sea más claro y eficiente, se pueden usar varias técnicas útiles y fáciles de aplicar:
+
+Listas por comprensión: permiten crear listas en una sola línea, de forma clara y rápida.
+Nombrar bien las variables: usar nombres que expliquen su función mejora mucho la comprensión del código: Ejemplo: usar total_precios en lugar de x.
+Evitar variables innecesarias: si una variable no se vuelve a usar, muchas veces se puede reemplazar directamente.
+Usar funciones para dividir el código: separar en partes pequeñas ayuda a entender y reutilizar mejor el código.
+Eliminar repeticiones: si hacés lo mismo muchas veces, podés usar un bucle o una función para evitar repetir código.
+Usar estructuras adecuadas: a veces, un diccionario o una tupla es mejor que una lista, según el tipo de dato.
+
+Problema 42
+
+Pregunta: ¿Cómo mejorar la legibilidad de un algoritmo en Python aplicando funciones, nombres descriptivos y comentarios adecuados?
+Respuesta: Para mejorar la legibilidad de un algoritmo en Python, es clave aplicar tres cosas: funciones, nombres descriptivos y comentarios adecuados. Primero, dividir el código en funciones pequeñas y específicas ayuda a organizar las tareas, haciendo que cada parte tenga un propósito claro y se pueda reutilizar. Segundo, usar nombres descriptivos para variables y funciones — como calcular_promedio en vez de func1, o total_ventas en vez de x— facilita entender qué hace cada dato o acción sin tener que adivinar. Por último, agregar comentarios cortos y precisos sobre qué hace cada bloque o función es muy útil, especialmente para alguien que lea el código después (o para uno mismo en el futuro). Un buen comentario explica el “por qué” o detalles importantes, sin repetir lo que ya dice el código. Con estas prácticas, el algoritmo se vuelve mucho más claro, fácil de seguir y mantener.
