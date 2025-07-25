@@ -345,3 +345,59 @@ Problema 42
 
 Pregunta: ¿Cómo mejorar la legibilidad de un algoritmo en Python aplicando funciones, nombres descriptivos y comentarios adecuados?
 Respuesta: Para mejorar la legibilidad de un algoritmo en Python, es clave aplicar tres cosas: funciones, nombres descriptivos y comentarios adecuados. Primero, dividir el código en funciones pequeñas y específicas ayuda a organizar las tareas, haciendo que cada parte tenga un propósito claro y se pueda reutilizar. Segundo, usar nombres descriptivos para variables y funciones — como calcular_promedio en vez de func1, o total_ventas en vez de x— facilita entender qué hace cada dato o acción sin tener que adivinar. Por último, agregar comentarios cortos y precisos sobre qué hace cada bloque o función es muy útil, especialmente para alguien que lea el código después (o para uno mismo en el futuro). Un buen comentario explica el “por qué” o detalles importantes, sin repetir lo que ya dice el código. Con estas prácticas, el algoritmo se vuelve mucho más claro, fácil de seguir y mantener.
+
+SEMANA DEL 22 AL 24 DE JULIO
+
+Problema 114
+
+Pregunta: Escribir un programa en Python que implemente búsqueda binaria para encontrar un número en un arreglo ordenado.
+Respuesta: Primero que nada entender que es la búsqueda binaria; es un algoritmo eficiente para buscar un valor dentro de una lista ordenada. En lugar de recorrer todos los elementos uno por uno (como en la búsqueda lineal), va dividiendo la lista a la mitad en cada paso. 
+Código:
+def busqueda_binaria(lista, objetivo):
+    inicio = 0
+    fin = len(lista) - 1
+
+    while inicio <= fin:
+        medio = (inicio + fin) // 2
+        valor_medio = lista[medio]
+
+        if valor_medio == objetivo:
+            return medio  # Devuelve la posición donde se encontró
+        elif valor_medio < objetivo:
+            inicio = medio + 1  # Buscar en la mitad derecha
+        else:
+            fin = medio - 1  # Buscar en la mitad izquierda
+
+    return -1  # No se encontró
+
+
+Problema 115
+
+Pregunta: Escribir un programa en Python que elimine un valor específico de una lista utilizando remove() o comprensión de listas.
+Respuesta: El método remove(valor) elimina la primera aparición del valor en la lista.
+
+Código: 
+
+lista = [10, 20, 30, 40, 30, 50]
+valor_a_eliminar = int(input("Ingresá el valor que querés eliminar: "))
+
+if valor_a_eliminar in lista:
+    lista.remove(valor_a_eliminar)
+    print("Lista actualizada:", lista)
+else:
+    print("Ese valor no está en la lista.")
+
+
+Problema 94
+
+Pregunta: Escribir un programa en Python que solicite la base y la altura de un rectángulo y calcule su área.
+Respuesta: Código:
+# Solicita datos al usuario
+base = float(input("Ingresá la base del rectángulo: "))
+altura = float(input("Ingresá la altura del rectángulo: "))
+
+# Calcula el área
+area = base * altura
+
+# Muestra el resultado
+print(f"El área del rectángulo es: {area}")
