@@ -401,3 +401,58 @@ area = base * altura
 
 # Muestra el resultado
 print(f"El área del rectángulo es: {area}")
+
+SEMANA DEL 29 AL 31 DE JULIO
+
+Problema 65
+
+Pregunta: Carlos está aprendiendo Python y quiere saber si debe centrarse en programación orientada a objetos o si es solo una cuestión de gustos. ¿Qué le recomendarías y por qué?
+Respuesta: No es solo una cuestión de gustos. La Programación Orientada a Objetos es una herramienta fundamental para crecer como programador. Aprenderla te va a ayudar a pensar mejor los problemas, escribir código más limpio y estar preparado para desafíos más grandes.
+Python es un lenguaje multiparadigma, esto significa que permite programar:
+
+de forma estructurada (funciones)
+
+y también orientada a objetos (clases y objetos)
+
+La POO (programación orientada a objetos) te ayuda a organizar mejor tu código
+En lugar de tener funciones sueltas, en POO podés:
+
+Crear clases que representen cosas (como Auto, Usuario, Libro)
+
+Crear objetos que son instancias de esas clases
+
+Usar métodos (funciones dentro de las clases) para trabajar con esos objetos
+
+Esto hace que el código sea más fácil de leer, mantener, reutilizar.
+
+Problema 86
+
+Pregunta: Escribir un programa en Python que calcule el n-ésimo número de la serie Fibonacci utilizando recursión o iteración.
+Respuesta: 
+Código:
+def fibonacci_recursivo(n):
+    if n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fibonacci_recursivo(n - 1) + fibonacci_recursivo(n - 2)
+
+# Ejemplo de uso
+n = int(input("Ingresá el valor de n: "))
+resultado = fibonacci_recursivo(n)
+print(f"El número {n}-ésimo de Fibonacci es: {resultado}")
+
+¿Cómo funciona?
+Si pedís fibonacci_recursivo(4)
+→ llama a fibonacci_recursivo(3) y fibonacci_recursivo(2)
+→ y así sigue llamando hacia atrás hasta llegar a los casos base (n == 1 o n == 2).
+
+Ventaja: muy elegante y simple.
+Desventaja: si pedís un número grande (como 40 o más), es muy lento porque repite muchos cálculos.
+
+Problema 33
+
+Pregunta: ¿Cómo se puede medir el tiempo de ejecución de un algoritmo escrito en Python?
+Respuesta: Cuando querés saber qué tan rápido (o lento) es tu código, es útil medir cuánto tiempo tarda en ejecutarse. Un método recomendable para ésto es usar el módulo time.
+El paso a paso para utilizarlo sería: Antes de ejecutar tu algoritmo, guardás el tiempo de inicio, después de ejecutarlo, guardás el tiempo de fin y finalmente restás: fin - inicio → eso te da los segundos que tardó.
