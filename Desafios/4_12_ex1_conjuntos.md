@@ -1,6 +1,28 @@
 Buscar una idea para crear un programa sobre el tema que estamos dadno en matemática discereta: conjuntos.
 
 Clasificación de números: una clase Numero que reciba un número y pueda decir si es: natural, entero, racional, irracional (solo como concepto), real.
+concetos: Natural (ℕ):
+Son los números que usamos para contar:
+1, 2, 3, 4, …
+(A veces se incluye el 0, según el autor.)
+
+Entero (ℤ):
+Son los naturales, sus negativos y el cero:
+…, -3, -2, -1, 0, 1, 2, 3, …
+
+Racional (ℚ):
+Son los números que se pueden escribir como fracción:
+1/2, 0.75, -3, 7
+(Incluye enteros y decimales exactos o periódicos.)
+
+Irracional:
+No se pueden escribir como fracción.
+√2, π, e
+(Tienen infinitos decimales no periódicos.)
+
+Real (ℝ):
+Incluye todos los racionales e irracionales.
+Es el conjunto más grande de los anteriores.
 
 El paso 1: class Numeros, esto define una clase llamada Numero. En programación orientada a objetos, una clase es como un "molde" para cerar objetos. En este caso, objetos representan un número.
 Luego con def__init__(self, valor):, este es el constructor de la clase, es una función especial que se ejecuta automáticamente al crear un nuevo objeto. self: es una referencia al propio objeto(Python lo usa siempre en métodos de clases) y valor: es el número que queremos analizar. entonces en: self.valor = valor, gurda ese número dentro del objeto, para poder usarlo más adelante.
