@@ -456,3 +456,80 @@ Problema 33
 Pregunta: ¿Cómo se puede medir el tiempo de ejecución de un algoritmo escrito en Python?
 Respuesta: Cuando querés saber qué tan rápido (o lento) es tu código, es útil medir cuánto tiempo tarda en ejecutarse. Un método recomendable para ésto es usar el módulo time.
 El paso a paso para utilizarlo sería: Antes de ejecutar tu algoritmo, guardás el tiempo de inicio, después de ejecutarlo, guardás el tiempo de fin y finalmente restás: fin - inicio → eso te da los segundos que tardó.
+
+SEMANA DEL 5 AL 7 DE AGOSTO
+
+Problema 98
+
+Pregunta: Escribir un programa en Python que calcule el seno de un ángulo en radianes usando la función math.sin.
+Respuesta: 
+Código: 
+import math
+
+# Pedimos al usuario que ingrese un ángulo en radianes
+angulo = float(input("Ingresá un ángulo en radianes: "))
+
+# Calculamos el seno del ángulo usando math.sin()
+seno = math.sin(angulo)
+
+# Mostramos el resultado
+print("El seno del ángulo es:", seno)
+
+Explicación paso a paso:
+import math
+Importamos la librería math, que incluye funciones matemáticas como sin().
+
+input() + float()
+Le pedimos al usuario que escriba un ángulo (por ejemplo, 1.57). Lo convertimos a número decimal con float() porque input() devuelve un texto.
+
+math.sin(angulo)
+Usamos la función sin() de math para calcular el seno del ángulo (el ángulo debe estar en radianes).
+
+print()
+Mostramos el resultado en pantalla.
+
+Problema 109
+
+Pregunta: Escribir un programa en Python que reemplace una subcadena por otra usando el método .replace().
+Respuesta: 
+código:
+# Pedimos la frase al usuario
+frase = input("Escribí una frase: ")
+
+# Pedimos la subcadena a reemplazar
+vieja = input("¿Qué palabra o parte querés reemplazar?: ")
+
+# Pedimos la nueva subcadena
+nueva = input("¿Por cuál palabra la querés reemplazar?: ")
+
+# Reemplazamos usando .replace()
+frase_modificada = frase.replace(vieja, nueva)
+
+# Mostramos el resultado
+print("La frase modificada es:", frase_modificada)
+
+Explicación paso a paso:
+input()
+Usamos input() tres veces para pedir:
+
+- Una frase completa
+
+La palabra (o parte) que querés cambiar
+
+La nueva palabra que querés poner en su lugar
+
+.replace(vieja, nueva)
+Este método reemplaza todas las apariciones de la subcadena "vieja" por la subcadena "nueva".
+
+print()
+Mostramos la frase modificada.
+
+
+Problema 54
+
+Pregunta: ¿Cómo se usan los operadores lógicos (and, or, not) en Python para controlar condiciones dentro de un algoritmo?
+Respuesta: 
+Operador and: Sirve para que dos condiciones se cumplan al mismo tiempo.
+Operador or: Sirve para que al menos una condición se cumpla.
+Operador not: Niega una condición: si algo es True, lo convierte en False, y viceversa.
+
