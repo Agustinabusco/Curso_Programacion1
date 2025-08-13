@@ -533,3 +533,38 @@ Operador and: Sirve para que dos condiciones se cumplan al mismo tiempo.
 Operador or: Sirve para que al menos una condición se cumpla.
 Operador not: Niega una condición: si algo es True, lo convierte en False, y viceversa.
 
+SEMANA DEL 12 AL 14 DE AGOSTO
+Problema 48
+
+Pregunta: ¿Qué herramientas o funciones de Python permiten medir el tiempo de ejecución de un algoritmo (como time o timeit)?
+Respuesta: En Python, para medir el tiempo de ejecución de un algoritmo se pueden usar principalmente dos herramientas: el módulo time y el módulo timeit. Con time, se toma una marca de tiempo antes y después del código usando time.time() o time.perf_counter() (este último más preciso) y se calcula la diferencia, por ejemplo: inicio = time.time(); # código; fin = time.time(); print(fin - inicio). Con timeit, se puede medir de forma más precisa y repetida el tiempo que tarda un fragmento de código, evitando efectos de otros procesos; se usa desde el intérprete (python -m timeit "código") o desde Python con import timeit y timeit.timeit("código", number=1000) para especificar cuántas veces repetirlo. Ambas herramientas permiten evaluar y comparar la eficiencia temporal de distintas soluciones.
+
+Problema 57
+
+Pregunta: ¿Cómo se definen funciones en Python usando def y cómo se reutilizan dentro de programas más grandes?
+Respuesta: En Python, una función se define usando la palabra clave def, seguida del nombre de la función, paréntesis (que pueden contener parámetros) y dos puntos; luego se escribe el bloque de instrucciones con sangría. Por ejemplo:def saludar(nombre):
+    print(f"Hola, {nombre}!")
+Esta función puede reutilizarse en cualquier parte del programa simplemente llamándola por su nombre y pasando los argumentos necesarios (saludar("Ana")). Además, se pueden usar para dividir el código en partes más pequeñas y organizadas, facilitando la lectura, el mantenimiento y la reutilización en programas más grandes, ya que una vez definidas pueden invocarse varias veces desde distintas secciones o incluso desde otros módulos importándolas.
+
+Problema 78
+
+Pregunta: Escribir un programa en Python que calcule el mínimo común múltiplo (MCM) de dos números utilizando funciones.
+Respuesta: 
+Código:
+# Función para calcular el máximo común divisor (MCD)
+def mcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+# Función para calcular el mínimo común múltiplo (MCM)
+def mcm(a, b):
+    return abs(a * b) // mcd(a, b)
+
+# Programa principal
+num1 = int(input("Ingrese el primer número: "))
+num2 = int(input("Ingrese el segundo número: "))
+
+resultado = mcm(num1, num2)
+print(f"El MCM de {num1} y {num2} es: {resultado}")
+
