@@ -568,3 +568,113 @@ num2 = int(input("Ingrese el segundo número: "))
 resultado = mcm(num1, num2)
 print(f"El MCM de {num1} y {num2} es: {resultado}")
 
+SEMANA DEL 19 AL 21 DE AGOSTO
+
+Problema 111
+
+Pregunta: Escribir un programa en Python que tome una cadena de texto y la convierta a número usando int() o float().
+Respuesta:
+Código:
+# Pedimos al usuario que ingrese un número como texto
+cadena = input("Escribe un número: ")
+
+# Intentamos convertir primero a entero
+try:
+    numero = int(cadena)  # convierte la cadena a entero
+    print("El número entero es:", numero)
+except ValueError:
+    # Si no funciona como entero, lo probamos como flotante (decimal)
+    try:
+        numero = float(cadena)
+        print("El número decimal es:", numero)
+    except ValueError:
+        print("Lo ingresado no es un número válido.")
+
+Explicación paso a paso
+
+cadena = input("Escribe un número: ")
+→ El usuario ingresa algo (ejemplo: "25" o "3.14").
+
+try: numero = int(cadena)
+→ Python intenta convertir la cadena a entero.
+
+Si la cadena es "25", funciona → numero = 25.
+
+Si es "3.14", falla, porque no es un entero.
+
+except ValueError:
+→ Si falló con int(), intentamos con float().
+
+"3.14" se convierte a 3.14.
+
+Si tampoco funciona ("hola"), mostramos el mensaje "Lo ingresado no es un número válido.".
+
+Problema 108
+
+Pregunta: Escribir un programa en Python que reciba una cadena y un carácter, y muestre el índice de su primera aparición con .find().
+Respuesta: 
+Código:
+# Pedimos la cadena y el carácter
+cadena = input("Escribe una cadena: ")
+caracter = input("Escribe un carácter a buscar: ")
+
+# Usamos el método find()
+indice = cadena.find(caracter)
+
+# Mostramos el resultado
+if indice != -1:
+    print("El carácter aparece por primera vez en la posición:", indice)
+else:
+    print("El carácter no aparece en la cadena.")
+
+Explicación paso a paso
+
+input("...") → pedimos al usuario la cadena y el carácter.
+
+Ojo: si escribe más de un carácter, .find() igual funciona, pero lo normal es uno solo.
+
+cadena.find(caracter) → busca el carácter:
+
+Si lo encuentra → devuelve el índice de la primera aparición (empezando en 0).
+
+Si no lo encuentra → devuelve -1.
+
+if indice != -1: → verificamos si se encontró o no.
+
+Problema 107
+
+Pregunta: Escribir un programa en Python que reciba una cadena y verifique si se lee igual de izquierda a derecha que de derecha a izquierda.
+Respuesta:
+Código: 
+# Pedimos una cadena
+cadena = input("Escribe una cadena: ")
+
+# Normalizamos: quitamos espacios y pasamos todo a minúsculas
+cadena_limpia = cadena.replace(" ", "").lower()
+
+# Comparamos con la cadena invertida
+if cadena_limpia == cadena_limpia[::-1]:
+    print("La cadena es un palíndromo.")
+else:
+    print("La cadena NO es un palíndromo.")
+
+Explicación paso a paso
+
+input() → pedimos al usuario una cadena.
+Ejemplo: "Anita lava la tina".
+
+replace(" ", "") → eliminamos espacios, porque si no, la comparación se rompe.
+"Anita lava la tina" → "Anitalavalatina".
+
+.lower() → pasamos a minúsculas para que no importe si hay mayúsculas.
+"Anitalavalatina".
+
+cadena_limpia[::-1] → esta sintaxis invierte la cadena.
+"anitalavalatina"[::-1] → "anitalavalatina".
+
+if cadena_limpia == cadena_limpia[::-1]:
+
+Si son iguales → es palíndromo.
+
+Si no → no lo es.
+
