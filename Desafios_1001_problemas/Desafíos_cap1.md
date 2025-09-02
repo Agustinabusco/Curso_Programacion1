@@ -678,3 +678,119 @@ Si son iguales → es palíndromo.
 
 Si no → no lo es.
 
+SEMANA DEL 26 AL 28 DE AGOSTO
+
+Problema 83
+
+Pregunta: Escribir un programa en Python que calcule la suma de todos los números impares en un rango dado por el usuario.
+Respuesta: # Pedimos al usuario el rango
+inicio = int(input("Ingresa el número de inicio del rango: "))
+fin = int(input("Ingresa el número de fin del rango: "))
+
+suma_impares = 0
+
+# Recorremos el rango y sumamos solo los números impares
+for numero in range(inicio, fin + 1):
+    if numero % 2 != 0:  # Si el resto de dividir por 2 es diferente de 0, es impar
+        suma_impares += numero
+
+print(f"La suma de todos los números impares entre {inicio} y {fin} es: {suma_impares}")
+
+numero % 2 != 0: El operador módulo (%) nos da el resto de una división. Los números impares siempre tienen resto 1 al dividirse por 2.
+
+Problema 92
+
+Pregunta: Escribir un programa en Python que reciba el radio de un círculo y calcule su circunferencia utilizando la constante math.pi.
+Respuesta: import math
+
+# Pedimos el radio al usuario
+radio = float(input("Ingresa el radio del círculo: "))
+
+# Calculamos la circunferencia usando la fórmula: C = 2 * π * r
+circunferencia = 2 * math.pi * radio
+
+print(f"La circunferencia del círculo con radio {radio} es: {circunferencia}")
+
+Se utiliza la constante float (porque las constantes se usan para mantener un dato fijo y que no cambie durante la ejecución del programa, al igual que usamos el módulo math.pi, porque estamos usando pi para calcular la circunferencia y es un dato que no puede cambiar, que tiene que ser siempre el mismo). Y también usamos input para interactuar con el usuario, es decir, para que otra persona pueda ingresar al programa y hacer lo que se le pide, como en este caso es pedirle un número, que usamos la constante float para que si nos dan un número con coma la máquina pueda interpretarlo, continuamos con el procedimiento usando circunferencia = 2 * mauth.pi * radio, estoes la fórmula de la circunferencia para que con el número que ingrese un número el programa proceda a usar la formula 2 multiplicado por el número pi por el radio y luego usamos un print para que nos muestre el resultado en pantalla, este lo usamos con un f string que se usa para unir cadena de texto con números entonces escribimos lo que queremos que nos muestre, en este caso: “La circunferencia del círculo con radio: y ponemos entre llaves: {radio} (para que coloque allí el resultado de radio con el número que utilizó el usuario) es: {circunferencia} (para que nos ponga el resultado de la circunferencia) y listo.
+
+Problema 88
+
+Pregunta: Escribir un programa en Python que verifique si un número es perfecto, es decir, si la suma de sus divisores propios lo iguala.
+Respuesta: # Pedimos el número al usuario
+numero = int(input("Ingresa un número para verificar si es perfecto: "))
+
+suma_divisores = 0
+
+# Buscamos todos los divisores propios (menores que el número)
+for i in range(1, numero):
+    if numero % i == 0:  # Si i es divisor de numero
+        suma_divisores += i
+
+# Verificamos si es perfecto
+if suma_divisores == numero:
+    print(f"{numero} ES un número perfecto")
+else:
+    print(f"{numero} NO es un número perfecto")
+    print(f"La suma de sus divisores propios es: {suma_divisores}")
+
+Primero le pedimos a usuario que ingrese un número utilizando: numero = int(input, luego usamos la variable suma_divisores = 0 (para tener un lugar donde guardar ese dato y que quede definido la suma divisores, luego usamos un bucle for para encontrar un número perfecto donde decimos que si el número dividido 1 es 0 , si es divisor de número, procedemos con suma_divisores +=i donde decimos que se le sume un número  a i luego verificamos si el número es perfecto usando condicionales, palabras claves de python, donde decimos que si el número en -suma_divisores- == es número (con doble igual confirmamos algo por asi decirlo) es número entonces continuamos en los print, en uno ponemos {numero} si es perfecto y en otro ponemos else (entonces) {número} es imperfecto, para cuando no lo sea, usando f string para combinar cadena de texto con numeros y un ultimo print para que nos diga la suma de sus divisores propios con la misma técnica: {suma_divisores} para que nos dé el valor de esa suma.
+
+SEMANA DEL 2 AL 4 DE SEPTIEMBRE 
+
+Problema 44
+
+Pregunta: ¿Cómo comparar la eficiencia de dos algoritmos en Python que resuelven el mismo problema usando listas, midiendo tiempos y recursos?
+Respuesta: import time
+
+# Algoritmo 1
+inicio = time.perf_counter()
+resultado1 = algoritmo1(datos)
+tiempo1 = time.perf_counter() - inicio
+
+# Algoritmo 2
+inicio = time.perf_counter()
+resultado2 = algoritmo2(datos)
+tiempo2 = time.perf_counter() - inicio
+
+print(f"Algoritmo 1: {tiempo1:.4f}s")
+print(f"Algoritmo 2: {tiempo2:.4f}s")
+
+Problema 113
+
+Pregunta: Escribir un programa en Python que ordene un arreglo de números en orden ascendente o descendente usando sort() o sorted().
+Respuesta: # Pedimos los números al usuario
+numeros_input = input("Ingresa números separados por espacios: ")
+numeros = list(map(int, numeros_input.split()))
+
+print(f"Lista original: {numeros}")
+
+# Usando sort() - modifica la lista original
+numeros_ascendente = numeros.copy()
+numeros_ascendente.sort()  # Orden ascendente
+print(f"Ascendente (sort): {numeros_ascendente}")
+
+Primero le pedimos los número al usuario con numeros = input, luego guardamos los números en una lista, sumamos un print para mostrar en pantalla y luego usamos el método de listas sort que lo que hace es modificar una lista de algo que tengas, como números, o lista de compras por ej sis usas texto, y definimos numeros_ascendentes porque en este caso queremos ordenar los números de nuestra lista de forma ascendente y usamos numeros.copy() para copiar los numeros que ingresó el usuario anteriormente, luego los ordenamos con numeros_ascendente.sort() y finalmente utilizamos un print para mostrar el resultado más limpio en la pantalla: (f"Ascendente (sort): {numeros_ascendente}").
+
+Problema 82
+
+Pregunta: Escribir un programa en Python que reciba dos coordenadas (x1, y1) y (x2, y2) y calcule la distancia entre los puntos.
+Respuesta: import math
+
+# Pedimos las coordenadas al usuario
+print("Ingresa las coordenadas del primer punto:")
+x1 = float(input("x1: "))
+y1 = float(input("y1: "))
+
+print("Ingresa las coordenadas del segundo punto:")
+x2 = float(input("x2: "))
+y2 = float(input("y2: "))
+
+# Calculamos la distancia
+distancia = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+print(f"La distancia entre ({x1}, {y1}) y ({x2}, {y2}) es: {distancia:.2f}")
+
+Primero importamos el módulo con el que vamos a trabajar que es el math, luego le pedimos al usuario que nos ingrese las coordenadas del primer punto con x1 y y1 primero, usamos el tipo de dato float que define el tipo de información que puede almacenar una variable, en este caso, números decimales y usamos input justamente como entrada para que el usuario ingrese los números, hacemos lo mismo con las coordenadas del segundo punto: x2 y y2 y luego calculamos la distancia con la fórmula: distancia = math.sqrt((x2 - x1)**2 + (y2 - y1)**2), finalmente usamos un print para mostrar en pantalla con f string para combinar texto con número: (f"La distancia entre ({x1}, {y1}) y ({x2}, {y2}) es: {distancia:.2f}"), lo que está escrito entre llaves va a ir cambiando según el número que ingrese el usuario para calcular.
+
+math.sqrt() es una función del módulo math de Python que calcula la raíz cuadrada de un número, lo que hace es que encuentra el número que, multiplicado por sí mismo, da el número original
+
