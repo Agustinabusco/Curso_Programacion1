@@ -794,3 +794,99 @@ Primero importamos el módulo con el que vamos a trabajar que es el math, luego 
 
 math.sqrt() es una función del módulo math de Python que calcula la raíz cuadrada de un número, lo que hace es que encuentra el número que, multiplicado por sí mismo, da el número original
 
+SEMANA DEL 9 AL 11 DE SEPTIEMBRE 
+
+Problema 31
+Pregunta: ¿Cómo se puede representar un algoritmo complejo usando instrucciones en Python sin implementarlo directamente?
+Respuesta: Si queremos representar un algoritmo complejo sin implementarlo directamente en Python, podemos hacerlo de distintas formas, dependiendo de qué tan detallado o abstracto lo queramos mostrar.
+1- usar pseudocódigo (comentarios): Podemos escribir los pasos del algoritmo como comentarios, para expresar la lógica sin programarla, esto no ejecuta nada, pero describe el algoritmo:
+
+# Algoritmo para ordenar una lista
+# 1. Recorremos la lista buscando el elemento más pequeño
+# 2. Lo colocamos al principio
+# 3. Repetimos el proceso con el resto de la lista
+# 4. Terminamos cuando todos los elementos estén ordenados
+
+2- usar funciones vacías (pass): Creamos la estructura de funciones y pasos, pero sin implementar la lógica. Así mostramos cómo se organizaría el algoritmo, de ésta manera representamos la idea sin programarla aún.
+
+def ordenar_lista(lista):
+    # Paso 1: encontrar el elemento más pequeño
+    pass
+
+def intercambiar_elementos():
+    # Paso 2: colocar el elemento en la posición correcta
+    pass
+
+def algoritmo_principal():
+    # Paso 3: repetir el proceso hasta ordenar
+    pass
+
+3- usar docstrings o cadenas multilínea: lo que hace esto es documentar el algoritmo dentro del propio código.
+
+def algoritmo():
+    """
+    Algoritmo de búsqueda:
+    1. Empezar desde el primer elemento.
+    2. Comparar con el valor buscado.
+    3. Si coincide, devolver la posición.
+    4. Si no, pasar al siguiente.
+    5. Si llegamos al final sin encontrarlo, devolver -1.
+    """
+    pass
+
+Problema 41
+
+Pregunta: ¿Cómo se estructura un algoritmo complejo en Python utilizando if, for y while anidados para representar su lógica?
+Respuesta: Como ejemplo voy a usar una búsqueda en una matriz con condiciones. Por lo tanto suponiendo que tengo una matriz (lista de listas) y queremos buscar un número que cumpla ciertas condiciones. uso la siguiente estructura de datos:
+
+def buscar_en_matriz(matriz, objetivo):
+    fila = 0
+    
+    # Recorremos las filas de la matriz con un while
+    while fila < len(matriz):
+        # Recorremos cada elemento de la fila con un for
+        for elemento in matriz[fila]:
+            # Verificamos condiciones con if
+            if elemento == objetivo:
+                print(f"Encontrado en fila {fila}")
+                return True
+            elif elemento > objetivo:
+                print(f"Elemento {elemento} es mayor al objetivo")
+            else:
+                print(f"Elemento {elemento} es menor al objetivo")
+        
+        # Pasamos a la siguiente fila
+        fila += 1
+    
+    print("No se encontró el elemento")
+    return False
+
+Explicación paso a paso
+
+while → controla las filas de la matriz (se repite hasta recorrerlas todas).
+for → dentro de cada fila, recorre cada elemento.
+if → analiza cada elemento con distintas condiciones (==, >, <).
+Cuando encuentra el valor → lo muestra y termina.
+Si no encuentra nada después de recorrer todo → devuelve False.
+
+Problema 117
+
+Pregunta: Escribir un programa en Python que divida una cadena en partes usando el método split().
+Respuesta: # Pedimos al usuario que ingrese una cadena
+texto = input("Escribí una frase: ")
+
+# Usamos split() para dividir la cadena en partes (por defecto, separa por espacios)
+partes = texto.split()
+
+# Mostramos el resultado
+print("La frase dividida en partes es:", partes)
+
+Explicación
+
+input() → pide al usuario que escriba una frase.
+Ejemplo: "Me gusta programar en Python".
+split() → divide la cadena en partes, separando por espacios (por defecto).
+"Me gusta programar en Python".split() → ["Me", "gusta", "programar", "en", "Python"].
+Guardamos el resultado en una lista (partes).
+Cada palabra de la frase pasa a ser un elemento de esa lista.
+Mostramos el resultado con print()
