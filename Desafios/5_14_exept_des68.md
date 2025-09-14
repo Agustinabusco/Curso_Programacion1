@@ -1,0 +1,3 @@
+Fundamentación del código:
+
+Lo resolví de esta forma porque quería que el programa fuera claro, modular y seguro frente a errores comunes: primero intento convertir todos los valores a números para asegurarme de que se puedan operar, luego realizo operaciones típicas (suma, promedio y división) que permiten cubrir distintos casos de excepción; utilicé un bloque try/except centralizado para capturar errores frecuentes como ZeroDivisionError (división por cero o promedio en lista vacía), ValueError (valores no convertibles a número) y TypeError (tipos no compatibles), de manera que el usuario reciba un mensaje claro en lugar de que el programa se interrumpa bruscamente,
