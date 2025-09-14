@@ -1,6 +1,6 @@
 Egxplicación del Código
 1. try: "Intentar" una Operación
-El bloque try es el corazón de nuestro manejo de excepciones. Contiene el código que podría fallar durante su ejecución.
+El bloque try es como el "corazón" de nuestro manejo de excepciones, ya que ontiene el código que podría fallar durante su ejecución.
 
 dividendo = int(input("...")): Esta línea le pide al usuario que ingrese un valor y luego intenta convertirlo a un número entero usando la función int(). Si el usuario, en lugar de un número, ingresa una letra o una palabra (por ejemplo, "hola"), la conversión falla y Python lanza una excepción del tipo ValueError.
 
