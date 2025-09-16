@@ -890,3 +890,46 @@ split() → divide la cadena en partes, separando por espacios (por defecto).
 Guardamos el resultado en una lista (partes).
 Cada palabra de la frase pasa a ser un elemento de esa lista.
 Mostramos el resultado con print()
+
+SEMANA DEL 16 AL 18 DE SEPTIEMBRE 
+
+Problema 116
+Pregunta: Escribir un programa en Python que una dos listas en una sola utilizando + o extend().
+respuesta: lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+
+# Usamos el operador + para unir las listas
+lista_unida = lista1 + lista2
+
+print(lista_unida)
+# Salida: [1, 2, 3, 4, 5, 6]
+
+Usando el operador +
+Este método crea una nueva lista que es la concatenación de las dos listas originales. Es útil cuando necesitas mantener las listas originales sin modificarlas.
+
+Problema 63
+
+Pregunta: Juan está aprendiendo Python y cree que todos los lenguajes son lo mismo. ¿Cómo le explicarías las diferencias y cuándo conviene usar uno u otro?
+Respuesta: Aunque todos los lenguajes nos permiten "darle órdenes" a una computadora, cada uno tiene sintaxis, filosofías y propósitos distintos.
+Algunas diferencias entre ellos son: su sintaxis y estructura, ya que la forma en que escribes el código. En Python, la sintaxis es muy legible, casi como inglés simple. En otros lenguajes como Java o C++, necesitas usar más símbolos como {} o ;. También la velocidad y eficiencia, por lo que algunos lenguajes son más rápidos que otros, por ejemplo, los lenguajes compilados (como C++ o Java) se traducen a un formato binario que la máquina ejecuta directamente, lo que los hace extremadamente rápidos. Los lenguajes interpretados (como Python o JavaScript) se ejecutan línea por línea, lo que los hace más lentos, pero mucho más flexibles y fáciles de usar.
+
+Problema 118
+
+Pregunta: Escribir un programa en Python que calcule el promedio de los elementos de una lista utilizando sum() y len().
+Respuesta: # Definimos una lista de números
+numeros = [10, 20, 30, 40, 50]
+
+# Usamos sum() para obtener la suma de los elementos
+suma_total = sum(numeros)
+
+# Usamos len() para obtener la cantidad de elementos
+cantidad_elementos = len(numeros)
+
+# Calculamos el promedio
+promedio = suma_total / cantidad_elementos
+
+# Imprimimos el resultado
+print(f"La suma de los elementos es: {suma_total}")
+print(f"La cantidad de elementos es: {cantidad_elementos}")
+print(f"El promedio es: {promedio}")
+
