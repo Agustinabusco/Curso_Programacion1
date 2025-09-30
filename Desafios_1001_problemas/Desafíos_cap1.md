@@ -933,3 +933,52 @@ print(f"La suma de los elementos es: {suma_total}")
 print(f"La cantidad de elementos es: {cantidad_elementos}")
 print(f"El promedio es: {promedio}")
 
+SEMANA DEL 23 AL 25 DE SEPTIEMBRE
+
+Problema 68
+Pregunta: Escribir un programa en Python que calcule el seno de un ángulo en radianes usando la función math.sin.
+Respuesta: Usar nombres como base, altura, resultado en lugar de x, y, z, hace que el código sea más fácil de leer y permite que otra persona (o incluso vos misma en el futuro) entiendas más rápido lo que hace el programa.
+
+Problema 100
+
+Pregunta: Escribir un programa en Python que calcule la tangente de un ángulo usando math.tan.
+Respuesta: import math
+
+# Pedimos al usuario el ángulo en radianes
+angulo = float(input("Ingrese un ángulo en radianes: "))
+
+# Calculamos la tangente usando la función tan de la librería math
+resultado = math.tan(angulo)
+
+# Mostramos el resultado
+print("La tangente del ángulo es:", resultado)
+
+Problema 64
+
+Pregunta: María se pregunta por qué existen tantos lenguajes como Python, Ruby o Go. ¿Cómo le explicarías que cada uno fue creado para resolver distintos problemas?
+Respuesta: Existen muchos lenguajes de programación porque cada uno fue creado para resolver distintos problemas, como si fueran herramientas diferentes en una caja: Python es fácil de leer y aprender, por eso se usa mucho en educación, ciencia de datos e inteligencia artificial; Ruby se diseñó para facilitar el desarrollo web de forma rápida y con menos esfuerzo; y Go, creado por Google, está pensado para proyectos grandes que necesitan velocidad y eficiencia; en resumen, no hay un lenguaje “mejor” en todo, sino que cada uno se adapta mejor a ciertos contextos.
+
+SEMANA DEL 30 DE SEPTIEMBRE AL 2 DE OCTUBRE
+
+Problema 69
+
+Problema: Manuel comienza con Python y se confunde entre variables y constantes. ¿Cómo podrías explicar con ejemplos cuándo se usa cada una?
+Respuesta: En Python, una variable es como una caja que puede cambiar lo que guarda adentro. Por ejemplo, la edad es una variable porque su valor se puede modificar. En cambio, una constante es como una caja que no deberíamos cambiar. En Python no existen constantes “obligatorias” como en otros lenguajes, pero por convención se escriben en mayúsculas para indicar que su valor debe mantenerse igual, por ejemplo, si trabajamos con PI se usa como constante porque su valor no cambia nunca en el programa.
+
+Problema 74
+
+Pregunta: Escribe un algoritmo en pseudocódigo que reciba dos números a y b, y verifique si a es divisible por b. Usa el operador módulo y una estructura condicional.
+Respuesta: Inicio
+    Leer a
+    Leer b
+    Si (a % b = 0) Entonces
+        Escribir "a es divisible por b"
+    Sino
+        Escribir "a no es divisible por b"
+    FinSi
+Fin
+
+Problema 32
+
+Pregunta: ¿Qué buenas prácticas de estilo y organización ayudan a que el código Python sea más legible y mantenible?
+Respuesta: En Python, es importante seguir buenas prácticas de estilo cómo usar nombres descriptivos en variables y funciones, respetar la convención PEP 8 (guía de estilo para escribir código Python que establece un conjunto de convenciones y recomendaciones para la legibilidad y consistencia del código), con indentación de 4 espacios y líneas claras, comentar solo lo necesario, dividir el código en funciones y módulos pequeños, escribir constantes en mayúsculas, dejar espacios para mejorar la legibilidad, evitar duplicar código reutilizando funciones, y manejar errores con try/except; todo esto hace que el programa sea más legible, fácil de mantener y comprensible tanto para vos como para otros programadores.
