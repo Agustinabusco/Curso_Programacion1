@@ -982,3 +982,72 @@ Problema 32
 
 Pregunta: ¿Qué buenas prácticas de estilo y organización ayudan a que el código Python sea más legible y mantenible?
 Respuesta: En Python, es importante seguir buenas prácticas de estilo cómo usar nombres descriptivos en variables y funciones, respetar la convención PEP 8 (guía de estilo para escribir código Python que establece un conjunto de convenciones y recomendaciones para la legibilidad y consistencia del código), con indentación de 4 espacios y líneas claras, comentar solo lo necesario, dividir el código en funciones y módulos pequeños, escribir constantes en mayúsculas, dejar espacios para mejorar la legibilidad, evitar duplicar código reutilizando funciones, y manejar errores con try/except; todo esto hace que el programa sea más legible, fácil de mantener y comprensible tanto para vos como para otros programadores.
+
+SEMANA DEL 7 AL 9 DE OCTUBRE
+
+Problema 61
+
+Pregunta: María está aprendiendo Python y confunde constantes, variables e identificadores. ¿Cómo se los explicarías con ejemplos sencillos y claros?
+Respuesta: En Python:
+
+Variable: es un nombre que usamos para guardar un valor que puede cambiar durante el programa.
+
+Constante: es un nombre que guarda un valor que no debería cambiar (aunque Python no obliga a mantenerlo igual). Por convención, se escribe en mayúsculas.
+
+Identificador:  es el nombre que le damos a una variable, constante, función o clase. Debe empezar con una letra o guión bajo, y no puede tener espacios ni empezar con un número.
+
+Ejemplo:
+La variable es como una caja donde guardás algo que puede cambiar (por ejemplo, tu edad).
+
+La constante es una caja que debería tener siempre el mismo valor (como el número π).
+
+El identificador es simplemente el nombre de la caja (por ejemplo, edad, PI o nombre)
+
+Problema 97
+
+Pregunta: Escribir un programa en Python que reciba una lista de números e imprima la suma total de sus elementos.
+Respuesta: numeros = [2, 4, 6, 8]
+suma_total = 0
+
+for n in numeros:
+    suma_total += n
+
+print("La suma total es:", suma_total)
+
+Problema 90
+
+Pregunta: Escribir un programa en Python que liste todos los números primos dentro de un rango definido por el usuario.
+Respuesta: inicio = int(input("Desde qué número? "))
+fin = int(input("Hasta qué número? "))
+
+print("Números primos:")
+
+for n in range(inicio, fin + 1):
+    if n > 1:
+        for i in range(2, n):
+            if n % i == 0:
+                break
+        else:
+            print(n)
+
+SEMANA DEL 14 AL 16 DE OCTUBRE
+
+Problema 38
+
+Pregunta: ¿Qué son los identificadores en Python y cómo deben usarse al escribir algoritmos?
+Respuesta: En Python, los identificadores son los nombres que usamos para identificar (o dar nombre a) cosas como variables, funciones, clases o constantes dentro de un programa. Sirven para que el código sea más claro y entendible, y deben seguir ciertas reglas, como por ejemplo que puede contener letras, guión bajo.
+
+Problema 110
+
+Pregunta: Escribir un programa en Python que determine si una cadena representa un número usando isdigit() o manejo de excepciones
+Respuesta: El uso de isdigit() es ideal para verificar números enteros simples, mientras que el manejo de excepciones con try y except permite detectar tanto enteros como números con decimales. Ambos métodos son útiles para validar datos ingresados por el usuario y evitar errores durante la ejecución del programa.
+
+Problema 51
+
+Pregunta: ¿En qué se diferencian una constante (como una variable inmutable con final o convención de mayúsculas) y una variable en Python?
+Respuesta: En Python, tanto las constantes como las variables se usan para guardar datos, pero se diferencian en su intención de uso:
+
+Variable: su valor puede cambiar durante el programa.
+
+Constante: su valor no debería cambiar, aunque Python no obliga a mantenerlo igual.
+Por eso, las constantes se escriben en mayúsculas por convención (para indicar que no deben modificarse).
