@@ -1051,3 +1051,30 @@ Variable: su valor puede cambiar durante el programa.
 
 Constante: su valor no debería cambiar, aunque Python no obliga a mantenerlo igual.
 Por eso, las constantes se escriben en mayúsculas por convención (para indicar que no deben modificarse).
+
+SEMANA DEL 21 AL 23 DE OCTUBRE
+
+Problema 67
+
+Pregunta: Pedro está aprendiendo Python pero se confunde con el uso del pseudocódigo. ¿Cómo podrías explicarle paso a paso cómo escribir algoritmos antes de codificar?
+Respuesta: Antes de programar en Python, es importante escribir el algoritmo en pseudocódigo, que es una forma sencilla de expresar los pasos que seguirá el programa usando lenguaje natural y estructuras lógicas.
+Primero se lee el problema y se identifica qué datos se necesitan (entradas) y qué resultados se esperan (salidas).
+Después, se plantean los pasos que permiten pasar de las entradas a las salidas, usando instrucciones como leer, si… entonces, mientras… hacer, o para… desde… hasta.
+Finalmente, se revisa que el algoritmo tenga sentido y no se salte pasos.
+Recién cuando la lógica está clara, se traduce el pseudocódigo a Python respetando su sintaxis.
+
+Problema 35
+
+Pregunta: ¿Cómo detectar errores en un algoritmo escrito en Python y corregirlos con pruebas?
+Respuesta: Para detectar errores en un algoritmo en Python, primero se debe leer el código con atención y ejecutarlo para ver si aparecen errores (de sintaxis o de lógica).
+Si el programa no funciona como se espera, se pueden usar pruebas con distintos valores de entrada para ver en qué parte falla.
+También se pueden agregar mensajes de impresión (print) para seguir el paso a paso de las variables y entender qué está ocurriendo.
+Una vez identificado el error, se corrige el código, se vuelve a ejecutar y se repite la prueba hasta que el resultado sea el correcto.
+Este proceso se llama depuración, y sirve para mejorar y asegurar que el algoritmo funcione bien en todos los casos.
+
+Problema 34
+
+Pregunta: ¿Cómo se puede comparar dos soluciones en Python para un mismo problema y determinar cuál es más eficiente?
+Respuesta: Para comparar dos soluciones en Python para un mismo problema, se analiza su eficiencia, es decir, qué tan rápido y con cuánta memoria resuelven la tarea.
+Primero, se pueden probar ambas con los mismos datos y medir el tiempo de ejecución (por ejemplo, usando el módulo time).
+También se observa cuántas operaciones realizan: si una tiene más bucles o repite cálculos innecesarios, será menos eficiente, la solución más eficiente es la que tarda menos tiempo y usa menos recursos para obtener el mismo resultado.
